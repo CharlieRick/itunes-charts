@@ -1,0 +1,348 @@
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Header */
+
+header {
+    padding-top: 60px;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+header .container {
+    padding-bottom: 30px;
+}
+
+.headerLogo {
+    float: left;
+}
+
+.itunesLogo { 
+    float: left;
+    height: 60px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.selectDropdowns {
+    display: inline;
+    margin-top: 30px;
+    float: right;
+    padding: 7px 0;
+
+}
+
+.selectDropdowns label {
+    font-weight: normal;
+    margin-right: 10px; 
+}
+
+
+@media screen and (min-width:768px) {
+    .underline {
+        border-bottom: 1px solid #d6d6d6;
+    }
+}
+
+@media screen and (min-width: 425) and (max-width: 767px) {
+
+    .underline {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .headerLogo {
+        display: block;
+        text-align: center;
+    }
+
+    .headerLogoDiv {
+        float: none;
+        margin: auto;
+    }
+
+    .selectDropdowns {
+        display: block;
+        float: none;
+        clear: both;
+        margin: auto;
+        padding: 7px 0;
+    
+    }
+
+    #genreSelect {
+        float: right;
+    }
+    #typeSelect {
+        float: right;
+    }
+
+    header .container {
+        padding-bottom: 0px;
+    }
+   
+}
+
+/* Number One */
+
+#numberOne {
+    height: auto;
+    margin-top: 40px;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.02);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    transition: background 0.2s ease;
+}
+
+.noOneImgCol {
+    padding: 0;
+}
+
+#numberOnePos h1 {
+    font-size: 100px;
+    font-weight: 300;
+    opacity: 0.2;
+    color: black;
+}
+
+.numberOne {
+    font-weight: 300;
+    padding-left: 30px;
+}
+
+.numberOne h1{
+    font-size: 56px;
+    font-weight: 300;
+    color: black;
+}
+
+.numberOne h2{
+    font-size: 38px;
+    font-weight: 300;
+    color: #8b8b8b;
+}
+
+.numberOneImage {
+    width: 100%;
+}
+
+a:hover {
+    color: #23527c;
+    text-decoration: none;
+}
+
+a:focus, a:hover {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+    
+    .numberOne {
+        padding-bottom: 30px;
+    }
+
+}
+ 
+@media screen and (max-width: 991px) {
+
+    #numberOnePos h1 {
+        font-size: 80px;
+        font-weight: 300;
+        opacity: 0.2;
+        color: black;
+    }
+
+    .numberOne h1{
+        font-size: 34px;
+        text-decoration: none;
+    }
+    
+    .numberOne h2{
+        font-size: 21px;
+        text-decoration: none;
+
+    }
+}
+
+
+/* Number One BG */
+
+
+
+    @-webkit-keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    
+    @-moz-keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    
+    @keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    
+    #numberOne {
+        background: linear-gradient(-45deg, #f98552, #fe2768);
+        /* background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); */
+        background-size: 400% 400%;
+        background-attachment: fixed;
+        -webkit-animation: Gradient 5s ease infinite;
+        -moz-animation: Gradient 5s ease infinite;
+        animation: Gradient 5s ease infinite;
+    }
+    
+    #numberOne .numberOne h1{
+        color:white;
+    }
+    
+    #numberOne .numberOne h2{
+        color: #ffffffcb;
+    }
+
+
+
+
+
+
+/* Generic */
+
+#content {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.itemDiv {
+    font-family: 'Rubik', sans-serif;
+    margin: 20px 0 40px 0;
+    height: 380px;
+    transition: background-color 0.5s ease;
+
+}
+
+.itemDiv h1 {
+    font-size: 16px;
+    margin-top: 5px; 
+}
+
+.itemDiv h2 {
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 10px;
+    color: #8b8b8b;
+}
+
+.position p{
+    color: #8b8b8b;
+}
+
+.albumArtwork {
+    width: 100%;
+    padding: 0 20px 20px 0;
+    transition: all .2s ease-in-out;
+}
+
+
+
+/* Hover Effects */
+
+@media screen and (min-width: 992px) {
+    .albumArtwork:hover {
+        transform: scale(1.1);
+    }
+
+    .itemDiv:hover {
+        background-color: #8b8b8b28;
+        
+    }
+    
+    .itemDiv:hover .albumArtwork {
+        transform: scale(1.12);
+    }
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 991px) {
+    .itemDiv {
+        height: 250px;
+    
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    #content {
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+    .itemDiv {
+        margin: 40px 0 40px 0;
+        height: 180px;
+        transition: background-color 0.5s ease;
+        border-bottom: solid 1px #d8d8d8;
+    
+    }
+
+    .itemDiv img {
+        float: left;
+        margin-right:20px; 
+    }
+
+    .itemDiv p, .itemDiv h1, .itemDiv h2{
+        margin-left: 20px;
+    }
+
+    .albumArtwork {
+        width: 40%;
+        max-width: 166px;
+        padding: 0;
+        transition: all .2s ease-in-out;
+    }
+
+}
+
+/* Back To Top Button */
+
+.backToTop {
+    width:100%
+}
+
+#backToTopText {
+    color: #8b8b8b;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+
+#backToTopText:hover {
+    color: #383838;
+}
